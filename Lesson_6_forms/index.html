@@ -6,5 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson_6</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Hire Me</h1>
+    <p>Contact information</p>
+    <table cellspacing="4" cellpadding="10" bgcolor="#FFFAFA" border="1">
+      <tr>
+        <th>Phone</th>
+        <td>+380933333333</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>Somewhere in Ukraine</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <form action="../Lesson_5_table/index.html">
+      <fieldset>
+        <legend>Contact form</legend>
+
+        <label for="email">E-mail* </label> <br />
+        <input id="email" name="email" type="email" />
+        <br />
+        <br />
+        <br />
+        <label for="descr">Description</label> <br />
+        <textarea id="descr" name="descr" rows="7" cols="50"></textarea>
+        <br />
+        <br />
+        <label for="select">Work type:</label>
+        <select id="select" name="select">
+          <option value="full_time">full time</option>
+          <option value="all_time">all time</option>
+          <option value="no_time">no time</option>
+        </select>
+        <br />
+        <br />
+        <input value="Hire me" type="submit" />
+      </fieldset>
+    </form>
+  </body>
 </html>
