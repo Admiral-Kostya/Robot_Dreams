@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 100%;
+  line-height: 1;
+  color: #000;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1276px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.button {
+  white-space: nowrap;
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 117%;
+  color: #fff;
+  background-color: #ff9900;
+  border-radius: 10px;
+  min-height: 40px;
+  padding: 5px 9px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.button:hover::before {
+  width: 100%;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  padding: 56px 0;
+}
+
+.body-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body-header__logo {
+  padding-right: 5px;
+  font-weight: 700;
+  font-size: 28px;
+  flex: 0 1 17%;
+}
+.body-header__logo img {
+  max-width: 100%;
+}
+.body-header__menu {
+  flex: 0 1 67%;
+  display: flex;
+  justify-content: flex-end;
+}
+.body-header__button {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu {
+  padding-right: 40px;
+}
+.menu__list {
+  display: flex;
+  column-gap: 39px;
+}
+
+.menu__link {
+  line-height: 117%;
+  position: relative;
+}
+
+.menu__link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background-color: rgba(154, 154, 154, 0.342);
+  transition: 0.5s;
+}
+.menu__link:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  background-color: #ff9900;
+  transition: width 0.5s;
+}
+.page {
+  position: relative;
+  flex: 1 1 auto;
+}
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("../img/promo_bg.jpg") no-repeat 50% / cover;
+}
+.promo__body {
+  padding-top: 250px;
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.promo__content {
+  flex: 1 1 50%;
+}
+.promo__title {
+  max-width: 650px;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 117%;
+}
+.promo__title:not(:last-child) {
+  margin-bottom: 56px;
+}
+
+.promo__btn:not(:last-child) {
+  margin-bottom: 56px;
+}
+.promo__partners {
+  max-width: 400px;
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.promo__brands {
+  width: 100%;
+  height: 100%;
+}
+.promo__link {
+  opacity: 0.5;
+  transition: 0.3s all;
+}
+.promo__link_dahua img {
+  padding-top: 20px;
+}
+
+.promo__link:hover {
+  opacity: 1;
+  transition: 0.3s all;
+}
+.promo__partners img {
+  max-width: 100%;
+}
+.promo__image {
+  flex: 0 1 36%;
+  position: relative;
+}
+.promo__image img {
+  position: relative;
+  z-index: 20;
+}
+.promo__image::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  top: -20px;
+  left: 92px;
+  border: 10px solid #ff9900;
+  border-radius: 10px;
+}
+.promo__image::after {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  bottom: -15px;
+  right: 0;
+  border: 10px solid #ff9900;
+  opacity: 0.5;
+  border-radius: 10px;
+}
