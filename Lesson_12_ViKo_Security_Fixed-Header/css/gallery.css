@@ -9,8 +9,7 @@
   max-width: 900px;
   margin: 0 auto;
 }
-.gallery__body {
-}
+
 .body-gallery {
   display: flex;
   flex-wrap: wrap;
