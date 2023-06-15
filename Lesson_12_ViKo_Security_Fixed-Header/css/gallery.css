@@ -13,8 +13,8 @@
 .body-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 30px;
+  justify-content: center;
+  gap: 10px;
 }
 .body-gallery__item {
   flex: 0 1 45%;
@@ -22,6 +22,4 @@
   justify-content: center;
 }
 .body-gallery__item img {
-  width: 100%;
-  object-fit: cover;
 }
