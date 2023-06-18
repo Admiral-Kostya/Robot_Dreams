@@ -1,0 +1,25 @@
+.gallery {
+  min-height: 100vh;
+  position: relative;
+  /*  background: url("../img/promo_bg.jpg") no-repeat 50% / cover; */
+  background-color: #fadec5;
+}
+.gallery__container {
+  padding-top: 250px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.body-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.body-gallery__item {
+  flex: 0 1 45%;
+  display: flex;
+  justify-content: center;
+}
+.body-gallery__item img {
+}
