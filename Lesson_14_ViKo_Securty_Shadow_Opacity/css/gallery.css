@@ -20,13 +20,26 @@
   flex: 0 1 45%;
   display: flex;
   justify-content: center;
-  transition: 0.5s all;
 }
 .body-gallery__item img {
   transition: 0.5s all;
 }
 .body-gallery__item img:hover {
   transition: 0.5s all;
-  transform: scale(1.05);
   box-shadow: 5px 5px 20px var(--main-color);
+  animation-name: image;
+  animation-duration: 2.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes image {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+    border-radius: 20px;
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
