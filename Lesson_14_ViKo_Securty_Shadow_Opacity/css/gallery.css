@@ -20,4 +20,13 @@
   flex: 0 1 45%;
   display: flex;
   justify-content: center;
+  transition: 0.5s all;
+}
+.body-gallery__item img {
+  transition: 0.5s all;
+}
+.body-gallery__item img:hover {
+  transition: 0.5s all;
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px var(--main-color);
 }
