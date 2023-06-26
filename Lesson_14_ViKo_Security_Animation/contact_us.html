@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViKo_Contact-Us</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/contact-us.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__body body-header">
+            <a href="index.html" class="body-header__logo">Vi&Ko Security</a>
+            <nav class="body-header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                  <a href="gallery.html" class="menu__link">Галерея</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="contact_us.html" class="menu__link"
+                    >Связаться с нами
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="body-header__button button">Заказать звонок </a>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__contact-us contact-us">
+          <div class="contact-us__container container">
+            <div class="contact-us__content content">
+              <h2 class="content__subtitle">Просто заполните форму</h2>
+              <p class="content__text">
+                и мы свяжемся с Вами в течении 10ти минут
+              </p>
+              <form class="content__form" action="#">
+                <input
+                  name="name"
+                  type="name"
+                  required
+                  minlength="3"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  name="phone"
+                  type="tel"
+                  required
+                  placeholder="Ваш телефон"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Ваш E-mail"
+                />
+                <div class="content__link">
+                  <button type="submit" class="content__button button">
+                    заказать консультацию
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="contact-us__image">
+              <img src="img/promo_main.png" alt="promo_main" />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
