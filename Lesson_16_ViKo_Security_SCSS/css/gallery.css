@@ -1,0 +1,32 @@
+.gallery {
+  min-height: 100vh;
+  position: relative;
+  /*  background: url("../img/promo_bg.jpg") no-repeat 50% / cover; */
+  background-color: var(--gallery-bg-color);
+}
+.gallery__container {
+  padding-top: 250px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.body-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.body-gallery__item {
+  flex: 0 1 45%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s all;
+}
+.body-gallery__item img {
+  transition: 0.5s all;
+}
+.body-gallery__item img:hover {
+  transition: 0.5s all;
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px var(--main-color);
+}
